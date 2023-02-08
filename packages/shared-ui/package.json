@@ -1,0 +1,67 @@
+{
+  "devDependencies": {
+    "@cd/data-access": "*",
+    "@cd/shared-config": "*",
+    "@rollup/plugin-commonjs": "24.0.1",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-typescript": "11.0.0",
+    "@tailwindcss/typography": "0.5.8",
+    "@types/node": "18.11.10",
+    "@types/react-dom": "18.0.8",
+    "@typescript-eslint/eslint-plugin": "5.45.0",
+    "@typescript-eslint/parser": "5.45.0",
+    "autoprefixer": "10.4.13",
+    "clsx": "1.2.1",
+    "concurrently": "7.6.0",
+    "daisyui": "2.46.0",
+    "date-fns": "2.29.3",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-simple-import-sort": "8.0.0",
+    "json": "11.0.0",
+    "postcss": "8.4.19",
+    "prettier": "2.8.0",
+    "rollup": "3.12.0",
+    "rollup-plugin-css-only": "4.3.0",
+    "rollup-plugin-dts": "5.1.1",
+    "rollup-plugin-postcss": "4.0.2",
+    "tailwind-merge": "1.8.0",
+    "tailwindcss": "3.2.4",
+    "typescript": "4.9.3"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/shared-ui.es.js",
+      "require": "./dist/shared-ui.cjs.js"
+    },
+    "./dist/icons": "./dist/icons",
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/shared-ui.cjs.js",
+  "module": "dist/shared-ui.es.js",
+  "name": "@cd/shared-ui",
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "concurrently \"yarn build:ts\"",
+    "build:ts": "rollup -c",
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
+    "watch": "concurrently \"yarn watch:ts\"",
+    "watch:ts": "rollup -c --watch"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "0.0.1"
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.cjs"
+, "index.js", "config/index.js", "config/loadEnv.js"  ],
+  "exclude": [
+    "node_modules",
+  ]
+}

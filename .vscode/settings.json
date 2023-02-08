@@ -1,0 +1,36 @@
+{
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true,
+  },
+  "files.exclude": {
+     "**/.git": false
+  },
+  "cSpell.words": [
+    "blurhash",
+    "camelcase",
+    "cardlist",
+    "daisyui",
+    "ecommerce",
+    "Formik",
+    "healthcheck",
+    "pscale",
+    "purgecss",
+    "reduxjs",
+    "signin",
+    "supertokens",
+    "tailwindcss",
+    "topbar",
+    "usehooks",
+    "zipcode"
+  ],
+  "jest.autoRun": { "watch": false }
+}
