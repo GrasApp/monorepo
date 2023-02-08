@@ -1,8 +1,6 @@
 import { Button, Center, H1, Paragraph } from '@cd/shared-ui';
-import Image from 'next/image';
 import SuperTokens from 'supertokens-auth-react';
 import { useSessionContext } from 'supertokens-auth-react/recipe/session';
-import backdrop from '../../public/marijuana-backdrop.png';
 export default function LandingPage() {
     const session = useSessionContext();
     return (
@@ -14,7 +12,6 @@ export default function LandingPage() {
                 clipPath: 'inset(0 0 0 0)',
             }}
         >
-            <Image src={backdrop} alt="" fill={true} style={{ objectFit: 'cover', objectPosition: '40% 60%' }} />
             <div
                 style={{
                     backgroundColor: 'rgba(0,0,0,0.1)',

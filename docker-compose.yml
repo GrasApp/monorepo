@@ -5,4 +5,3 @@ services:
   # nginx: 
   #   build: ./services/nginx
   #   ports:
-  #     - 80:80

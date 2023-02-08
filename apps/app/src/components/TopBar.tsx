@@ -1,11 +1,8 @@
 import { Button, FlexBox, H2, Paragraph } from '@cd/shared-ui';
-import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import SuperTokens from 'supertokens-auth-react';
 import SessionReact, { useSessionContext } from 'supertokens-auth-react/recipe/session';
 import { twMerge } from 'tailwind-merge';
-import logo from '../../public/logo.png';
 
 function TopBar() {
     const doesSessionExist = async () => await SessionReact.doesSessionExist();
@@ -13,9 +10,7 @@ function TopBar() {
     const topbar = ['flex flex-row h-[66px] pr-4 lg:px-16 bg-inverse space-x-2 items-center shadow'];
     return (
         <div className={twMerge(topbar)}>
-            <Link href="/" passHref>
-                <Image alt="Gras" width={50} height={50} src={logo} />
-            </Link>
+            <Link href="/" passHref></Link>
             <Link href="/">
                 <H2 className="pt-1">Gras</H2>
             </Link>

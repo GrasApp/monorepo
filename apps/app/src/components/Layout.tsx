@@ -1,12 +1,10 @@
 import { Button, FlexBox, Footer, H2, Header, Paragraph } from '@cd/shared-ui';
 import { SideNavContainer } from 'components';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ChangeEventHandler, PropsWithChildren, ReactEventHandler, useEffect } from 'react';
 import SuperTokens from 'supertokens-auth-react';
 import SessionReact, { useSessionContext } from 'supertokens-auth-react/recipe/session';
 import { twMerge } from 'tailwind-merge';
-import logo from '../../public/logo.png';
 import AdminDashboardNavigation from './AdminDashBoardNavigation';
 import SearchBar from './AppSearch';
 interface LayoutProps extends PropsWithChildren {
@@ -53,9 +51,7 @@ function TopBar({ doesSessionExist }: { doesSessionExist?: boolean }) {
     const topbar = ['flex flex-row h-[66px] pr-4 lg:px-16 bg-inverse space-x-2 items-center shadow'];
     return (
         <div className={twMerge(topbar)}>
-            <Link href="/" passHref>
-                <Image alt="Gras" width={50} height={50} src={logo} />
-            </Link>
+            <Link href="/" passHref></Link>
             <Link href="/">
                 <H2 className="pt-1">Gras</H2>
             </Link>
