@@ -1,0 +1,14 @@
+before sharing a project with devs,
+
+provide a concise readme describing the project structure,
+common commands, most important packages, and dependency heirarchy
+
+clone the project into a new dir,
+run all the processes needed to build and start the project
+make sure no necessary files are missing
+make sure functionality is working
+
+ask:
+How can I simplify the setup process for devs?
+How can I use the conventional project commands more intuitively?
+How can I automate the most?

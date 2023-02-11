@@ -16,7 +16,7 @@
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "watch": "turbo run watch --parallel",
-    "dev": "concurrently \"yarn watch\" \"yarn dev:init\"",
+    "dev": "concurrently \"yarn watch\" \"yarn watch\" \"yarn dev:init\"",
     "dev:init": "turbo run dev --filter='./apps/*' --parallel",
     "app": "yarn workspace @cd/app",
     "ui": "yarn workspace @cd/shared-ui",
