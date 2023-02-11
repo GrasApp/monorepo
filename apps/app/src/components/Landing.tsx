@@ -23,8 +23,8 @@ export default function LandingPage() {
                 }}
             ></div>
 
-            <Center className="z-10 space-y-1">
-                <H1 className="text-inverse font-display">Welcome to Gras Cannabis</H1>
+            <Center className="z-10 space-y-2 justify-center">
+                <H1 className="text-inverse font-display">Welcome to App</H1>
                 <Paragraph className="text-lg text-inverse">Sign in to use this app</Paragraph>
                 <Button
                     className="w-[200px] h-[80px] bg-primary hover:bg-[#0b7529] opacity-90 text-xl transition ease-in-out duration-300"

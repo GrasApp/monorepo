@@ -19,9 +19,9 @@ export default class MainDocument extends Document {
 
     render() {
         return (
-            <Html data-theme="">
-                <Head title="">
-                    <meta name="vendor experience application" content="" />
+            <Html data-theme="cannabis">
+                <Head title="Gras Cannabis">
+                    <meta name="vendor experience application" content="Property of Gras Cannabis Co." />
                     <link rel="icon" href="/favicon.ico" />
                     {process.env.NODE_ENV !== 'production' && (
                         <script dangerouslySetInnerHTML={{ __html: noOverlayWorkaroundScript }} />
