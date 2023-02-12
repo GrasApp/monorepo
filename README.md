@@ -29,3 +29,6 @@ There is an example in the /packages/data-access/src/supertokens.ts file login f
 4. For /packages/data-access/src/supertokens.ts file, there should be only imports from the supertokens library built in functions.
 Dont place other dependencies here.
 The server routes functions will be dependent on the functions you create.
+
+Good luck! Message me on fiverr or my mobile number any time if you have a question, or want to discuss.
+I'm happy to discuss with you to create the best solution.
