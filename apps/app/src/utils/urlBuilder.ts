@@ -24,6 +24,10 @@ const urlBuilder = {
 
         userById: (id: any) => urlBuilder.main.baseUrl + `/auth/user/${id}`,
         usersByOrg: (id: any) => urlBuilder.main.baseUrl + `/organization/${id}/users`,
+        userLogin: (id: any) => urlBuilder.main.baseUrl + `/auth/login`,
+        userSignup: (id: any) => urlBuilder.main.baseUrl + `/auth/signup`,
+        forgotPassword: (id: any) => urlBuilder.main.baseUrl + `/auth/forgot-password`,
+        getUserSession: (id: any) => urlBuilder.main.baseUrl + `/auth/get-user`,
     },
 };
 
