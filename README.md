@@ -13,10 +13,9 @@ You can test the functions in development by querying these api routes with post
 
 Function Name       Test with this endpoint:
 login               POST 'http://localhost:6001/api/v1/auth/login'
-sign up
-forgot email,
-forgot password
-getUserSession
+sign up             POST 'http://localhost:6001/api/v1/auth/signup'
+forgot password     POST 'http://localhost:6001/api/v1/auth/forgot-password'
+getUserSession      POST 'http://localhost:6001/api/v1/auth/get-user-session'
 
 CODING STANDARDS
 
@@ -32,3 +31,12 @@ The server routes functions will be dependent on the functions you create.
 
 Good luck! Message me on fiverr or my mobile number any time if you have a question, or want to discuss.
 I'm happy to discuss with you to create the best solution.
+
+WORK STEPS
+
+1. review the codebase, and review supertokens docs here:
+<https://supertokens.com/docs/nodejs/modules.html>
+This project is using recipe/emailpassword module for supertokens.
+2. design the approach for authentication functions
+    - write pseudocode for detailed pattern and design, for using database data
+3. create customized functions for the requirements, in this file: /packages/data-access/src/supertokens.ts
